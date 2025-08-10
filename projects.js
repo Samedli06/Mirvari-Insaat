@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Get the projects grid
     const projectsGrid = document.getElementById('projectsGrid');
     
-    // All projects HTML with real images
+    // All projects HTML with real images - EXACT FILENAMES
     const projectsHTML = `
         <div class="project-card" data-category="infrastructure">
             <div class="project-image">
-                <img src="img/Mirvari Sekiller/Avromed Ərazinin setka hasara alinmasi.jpg" alt="Avromed Hasarlama İşləri" loading="lazy">
+                <img src="img/Mirvari Sekiller/Avromed Ərazinin setka hasara alinmasi.jpg" alt="Avromed Hasarlama İşləri" loading="lazy" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)';">
             </div>
             <div class="project-content">
                 <h3 class="project-title">Avromed - Hasarlama İşləri</h3>
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <div class="project-card" data-category="design">
             <div class="project-image">
-                <img src="img/Mirvari Sekiller/Dizayn işləri.jpg" alt="Professional Dizayn İşləri" loading="lazy">
+                <img src="img/Mirvari Sekiller/Dizayn işləri.jpg" alt="Professional Dizayn İşləri" loading="lazy" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)';">
             </div>
             <div class="project-content">
                 <h3 class="project-title">Professional Dizayn İşləri</h3>
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <div class="project-card" data-category="construction">
             <div class="project-image">
-                <img src="img/Mirvari Sekiller/FMG  Hillside Residence metal konstruksiya işləri.jpg" alt="FMG Hillside Residence" loading="lazy">
+                <img src="img/Mirvari Sekiller/hillside.jpg" alt="FMG Hillside Residence" loading="lazy" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)';">
             </div>
             <div class="project-content">
                 <h3 class="project-title">FMG Hillside Residence</h3>
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <div class="project-card" data-category="renovation">
             <div class="project-image">
-                <img src="img/Mirvari Sekiller/FMG  Xəzri Residence təmir bərpa işlər.jpg" alt="FMG Xəzri Residence" loading="lazy">
+                <img src="img/Mirvari Sekiller/xezri.jpg" alt="FMG Xəzri Residence" loading="lazy" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)';">
             </div>
             <div class="project-content">
                 <h3 class="project-title">FMG Xəzri Residence</h3>
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <div class="project-card" data-category="renovation">
             <div class="project-image">
-                <img src="img/Mirvari Sekiller/FMG Dalğa plaza   Daxili bəzək işləri.jpg" alt="FMG Dalğa Plaza" loading="lazy">
+                <img src="img/Mirvari Sekiller/dalga.jpg" alt="FMG Dalğa Plaza" loading="lazy" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)';">
             </div>
             <div class="project-content">
                 <h3 class="project-title">FMG Dalğa Plaza</h3>
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <div class="project-card" data-category="renovation">
             <div class="project-image">
-                <img src="img/Mirvari Sekiller/Pasha malls daxili quraşdirma işləri.jpg" alt="Pasha Malls" loading="lazy">
+                <img src="img/Mirvari Sekiller/pasha.jpg" alt="Pasha Malls" loading="lazy" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)';">
             </div>
             <div class="project-content">
                 <h3 class="project-title">Pasha Malls</h3>
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <div class="project-card" data-category="infrastructure">
             <div class="project-image">
-                <img src="img/Mirvari Sekiller/PMD PROJECTS Zəfər  parki ərazsində Birqada. Və təmir bərpa işləri.jpg" alt="PMD PROJECTS Zəfər Parkı" loading="lazy">
+                <img src="img/Mirvari Sekiller/pmd.jpg" alt="PMD PROJECTS Zəfər Parkı" loading="lazy" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)';">
             </div>
             <div class="project-content">
                 <h3 class="project-title">PMD PROJECTS - Zəfər Parkı</h3>
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <div class="project-card" data-category="infrastructure">
             <div class="project-image">
-                <img src="img/Mirvari Sekiller/Sənayə və  mülki tikinti E-93 Yol işlərinin görülməsi.jpg" alt="Sənaye və Mülki Tikinti E-93" loading="lazy">
+                <img src="img/Mirvari Sekiller/senaye.jpg" alt="Sənaye və Mülki Tikinti E-93" loading="lazy" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)';">
             </div>
             <div class="project-content">
                 <h3 class="project-title">Sənaye və Mülki Tikinti E-93</h3>
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <div class="project-card" data-category="infrastructure">
             <div class="project-image">
-                <img src='img/Mirvari Sekiller/"ECOLE LEGAL CENTRE"   Şirvan rayon ərazisində Torpaq işlərinin görülməsi.jpg' alt="ECOLE LEGAL CENTRE Torpaq İşləri" loading="lazy">
+                <img src="img/Mirvari Sekiller/ecole-torpaq.jpg" alt="ECOLE LEGAL CENTRE Torpaq İşləri" loading="lazy" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)';">
             </div>
             <div class="project-content">
                 <h3 class="project-title">ECOLE LEGAL CENTRE - Torpaq İşləri</h3>
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <div class="project-card" data-category="renovation">
             <div class="project-image">
-                <img src='img/Mirvari Sekiller/"ECOLE LEGAL CENTRE" Ofislərin təmir bərpa və yenidən qurma işləri.jpg' alt="ECOLE LEGAL CENTRE Ofis Təmiri" loading="lazy">
+                <img src="img/Mirvari Sekiller/ecole-ofis.jpg" alt="ECOLE LEGAL CENTRE Ofis Təmiri" loading="lazy" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)';">
             </div>
             <div class="project-content">
                 <h3 class="project-title">ECOLE LEGAL CENTRE - Ofis Təmiri</h3>

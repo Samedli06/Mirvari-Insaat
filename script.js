@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observe elements for animation
-    const animateElements = document.querySelectorAll('.service-card, .feature-card, .stat-item');
+    const animateElements = document.querySelectorAll('.service-card, .feature-card, .stat-item, .document-card');
     animateElements.forEach(el => {
         el.classList.add('loading');
         observer.observe(el);
