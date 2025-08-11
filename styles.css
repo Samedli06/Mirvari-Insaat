@@ -49,13 +49,22 @@ body {
     height: 90px;
 }
 
-.nav-logo h2 {
-    color: #2c5aa0;
-    font-weight: 700;
-    font-size: 1.8rem;
+.nav-logo {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+}
+
+.nav-logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 68px;
+    width: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .logo-tagline {
@@ -817,6 +826,12 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Use alternate hero background for mobile */
+    .hero {
+        background-image: url('bg2.jpg');
+        background-size: cover;
+        background-position: center;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -837,6 +852,10 @@ section {
 
     .hamburger {
         display: flex;
+    }
+
+    .logo-img {
+        height: 54px;
     }
 
     .hamburger.active .bar:nth-child(2) {
