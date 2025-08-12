@@ -86,42 +86,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Projects are now handled in projects.js file
 
-    // Contact form handling
+    // Contact form removed; guard for older markup
     const contactForm = document.getElementById('contactForm');
-    
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-        
-        // Simple validation
-        if (!data.name || !data.email || !data.message) {
-            showNotification('Zəhmət olmasa bütün sahələri doldurun!', 'error');
-            return;
-        }
-
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(data.email)) {
-            showNotification('Zəhmət olmasa düzgün email ünvanı daxil edin!', 'error');
-            return;
-        }
-
-        // Simulate form submission
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-        submitBtn.textContent = 'Göndərilir...';
-        submitBtn.disabled = true;
-
-        setTimeout(() => {
-            showNotification('Mesajınız uğurla göndərildi! Tezliklə sizinlə əlaqə saxlayacağıq.', 'success');
-            contactForm.reset();
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }, 2000);
-    });
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            showNotification('Forma deaktiv edilib.', 'info');
+        });
+    }
 
     // Notification system
     function showNotification(message, type = 'info') {
